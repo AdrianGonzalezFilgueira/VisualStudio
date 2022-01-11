@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario HTML5</title>
+</head>
+
+<body>
+    <!-- Falta rellenar la acción (https://vigo-rocks.free.beeceptor.com/) y el método (post) 
+         El link de la acción no funciona 
+    -->
+
+    <form action="" method="">
+
+        <fieldset class="form_fieldset">
+
+            <legend>Información Personal</legend>
+
+
+            <div class="divisores">
+                <label class="form_label" for="nombre">Nombre: </label>
+            </div>
+            <input required class="form_input" type="text" placeholder="Nombre" name="nombre" id="nombre" maxlength="50">
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="edad">Edad: </label>
+            </div>
+            <input required class="form_input" type="number" placeholder="Edad" name="edad" id="edad" min="18" max="99">
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="ciudad">Ciudad: </label>
+            </div>
+            <input required class="form_input" type="text" placeholder="Ciudad" name="ciudad" id="ciudad" maxlength="100">
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="transporte">Transporte:</label>
+            </div>
+            <select class="form_input" required placeholder="Transporte" name="trasporte" id="trasporte">
+                <option value="1">A pié</option>
+                <option value="2">Transporte Público</option>
+                <option value="3">Transporte Privado</option>
+            </select>
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="objetivo">Objetivo: </label>
+            </div>
+            <textarea class="form_input" placeholder="Háblanos de tus expectativas..." name="objetivo" id="objetivo"
+                form="usrform" rows="10" cols="50" maxlength="1024"></textarea>
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="verdadmentira">Verdad o mentira: </label>
+            </div>
+            <div>
+                <label class="form_label" for="verdadmentira1"> Adoro la programación </label>
+                <input required type="checkbox" name="verdadmentira1" id="verdadmentira1" value="1">
+            </div>
+
+            <div>
+                <label class="form_label" for="verdadmentira2"> Me gustan los videojuegos </label>
+                <input required type="checkbox" name="verdadmentira2" id="verdadmentira2" value="2">
+            </div>
+
+            <div>
+                <label class="form_label" for="verdadmentira3"> Odio la programación </label>
+                <input type="checkbox" name="verdadmentira3" id="verdadmentira3" value="3">
+            </div>
+
+
+
+            <div class="divisores">
+                <label class="form_label" for="discord">Discord: </label>
+            </div>
+            <input required class="form_input" type="text" placeholder="@Discord" name="discord" id="discord" 
+            maxlength="50" pattern="[@][a-zA-Z0-9-_.]{1,20}">
+
+
+
+            <div class="divisores">
+                <input class="boton_enviar" type="submit" class="submit" id="submit" value="Enviar">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

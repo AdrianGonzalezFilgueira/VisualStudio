@@ -1,0 +1,36 @@
+body{
+    background-color: green;
+}
+
+h1{
+    font-size: 80px;
+}
+
+#blanco{
+    font-size: 25px;
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.bisque{
+    font-size: 25px;
+    color: bisque;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.orange{
+    font-size: 25px;
+    color: orange;
+    font-style: oblique;
+}
+
+
+div ~ p{
+    font-size: 40px;
+    color: red;
+    font-style: oblique;
+    font-weight: bolder;
+}
+

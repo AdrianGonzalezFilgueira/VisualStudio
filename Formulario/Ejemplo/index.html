@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!-- Registro para la Vigo FrikiCon 
+            
+            -- DATOS CLIENTE -- 
+            Nombre humano
+            Fecha nacimiento humana
+            
+            -- DATOS PERSONALES --
+            Nombre de personaje
+            Edad de personaje
+            Raza: Alien, humanoide, Omicroniano
+            Color de piel
+            
+            -- DATOS DE ACCESO --
+            Palabra secreta para poder acceder
+            Aceptar Términos y condiciones
+            
+    -->
+
+    <H1>FrikiVig: Formulario de registro</H1>
+    <img style="width:22%" src="img/dinoseto.jpg" alt="DinoSeto">
+
+    <form action="" method="">
+
+        <fieldset>
+
+            <legend>Información Personal</legend>
+
+                <div class="divisores">
+                    <label for="nombre_humano">Nombre Humano</label>
+                    <input required type="text" name="nombre_humano" id="nombre_humano" maxlength="20">
+                </div>
+
+                <div class="divisores">
+                    <label for="fecha_humano">Fecha Nacimiento Humano</label>
+                    <input required type="date" name="fecha_humano" id="fecha_humano" >
+                </div>
+
+                <div class="divisores">
+                    <label for="nombre_personaje">Nombre Personaje</label>
+                    <input required type="text" name="nombre_personaje" id="nombre_personaje" maxlength="20">
+                </div>
+
+                <div class="divisores">
+                    <label for="edad_personaje">Edad Personaje</label>
+                    <input required type="number" name="edad_personaje" id="edad_personaje">
+                </div>
+
+                <div class="divisores">
+                    <label for="raza_personaje">Raza Personaje</label>
+                    <select required name="raza_personaje" id="raza_personaje">
+                        <option value="1">Alien</option>
+                        <option value="2">Humanoide</option>
+                        <option value="3">Omicroniano</option>
+                    </select>
+                </div>
+
+                <div class="divisores">
+                    <label for="color_personaje">Color Piel</label>
+                    <input required type="color" name="color_personaje" id="color_personaje">
+                </div>
+
+                <div class="divisores">
+                    <label for="aceptar_terminos">Aceptar términos y condiciones</label>
+                    <input required type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                </div>
+                
+                <div class="divisores">
+                    <fieldset>
+                        <legend>Datos de acceso</legend>
+                        <label for="palabra-secreta">Palabra Secreta</label>
+                        <input required type="password" name="palabra-secreta" id="palabra-secreta" maxlength="20">
+                    </fieldset>
+                </div>
+
+                <div class="divisores">
+                    <input required type="submit" value="Registrar">
+                </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+
+</html>

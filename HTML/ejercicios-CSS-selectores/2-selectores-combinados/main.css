@@ -1,0 +1,35 @@
+#assignment-instructions{
+    color: orchid;
+    font-family: sans-serif;
+}
+
+code{
+    font-family: monospace;
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.SegundaLinea > code{
+    color: green;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+body li > code{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ol li:not(:first-child){
+    color: white;
+    background-color: black;
+}
+
+ol li{
+    color: white;
+    background-color: black;
+}

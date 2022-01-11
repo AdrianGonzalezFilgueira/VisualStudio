@@ -1,0 +1,30 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    color: chocolate;
+    font-size: 50px;
+}
+
+h1 + p{
+    color: orange;
+    font-size: 25px;
+}
+
+p{
+    font-size: 30px;
+}
+
+summary{
+    font-size: 50px;
+}
+
+span{
+    background-color: purple;
+}
+
+.blanco{
+    background-color: white;
+}
+

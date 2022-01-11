@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Koffing" style="text-align:center;">
+        <h1> Koffing </h1>
+        <img src="img/Koffing.png" alt="Koffing">
+        <h2> Stats </h2>
+        <ul style="text-align: left;display: inline-block;">
+            <li> HP: 80 </li>
+            <li> Attack: 60 </li>
+            <li> Defence: 70 </li>
+            <li> Speed: 300 </li>
+        </ul><br>
+        <img id="Koffing" src="img/Evolution.gif" alt="Evolution" width="50" height="50" onclick="Weezing()" />
+
+        <script>
+            function Weezing() {
+                document.getElementById("Koffing").style.display = "none"
+                document.getElementById("Weezing").style.display = "block"
+            }
+        </script>
+    </div>
+
+    <div id="Weezing" style="text-align:center; display: none;">
+        <h1> Weezing </h1>
+        <img src="img/Weezing.png" alt="Weezing">
+        <h2> Stats </h2>
+        <ul style="text-align: left;display: inline-block;">
+            <li> HP: <strike>80</strike> &#8594; 130 </li>
+            <li> Attack: <strike>60</strike> &#8594; 120 </li>
+            <li> Defence: <strike>70</strike> &#8594; 140 </li>
+            <li> Speed: <strike>300</strike> &#8594; 340 </li>
+        </ul><br>
+        <img id="Weezing" src="img/Evolution.gif" alt="Evolution" width="50" height="50" onclick="WeezingGalar()" />
+
+        <script>
+            function WeezingGalar() {
+                document.getElementById("Weezing").style.display = "none"
+                document.getElementById("WeezingGalar").style.display = "block"
+            }
+        </script>
+    </div>
+
+    <div id="WeezingGalar" style="text-align:center; display: none;">
+        <h1> Galar Weezing </h1>
+        <img src="img/WeezingGalar.png" alt="WeezingGalar">
+        <details>
+            <summary>Stats</summary>
+                <ul id="Stats" style="text-align: left;display: inline-block;">
+                    <li> HP: 230 </li>
+                    <li> Attack: 220 </li>
+                    <li> Defence: 240 </li>
+                    <li> Speed: 380 </li>
+                </ul><br>
+            
+        </details>
+
+        <img id="WeezingGalar" src="img/Evolution.gif" alt="Evolution" width="50" height="50" onclick="Koffing()" />
+
+        <script>
+            function Koffing() {
+                document.getElementById("WeezingGalar").style.display = "none"
+                document.getElementById("Koffing").style.display = "block"
+            }
+        </script>
+    </div>
+</body>
+
+</html>

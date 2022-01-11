@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: hsl(233, 47%, 7%);
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.mobile-main{
+  width: 375px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  padding: 80px;
+}
+
+.mobile-imageresponsive {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  filter: sepia(80%);
+}
+
+.mobile-gradient{
+  background-image: linear-gradient(hsl(271, 74%, 28%),rgb(23, 61, 119));
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+.mobile-title{
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -5px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.mobile-mainparagraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: center;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 9px;
+  padding-bottom: 20px;
+ }
+
+ .mobile-statsheading {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  padding-bottom: 15px;
+  
+ }
+
+ .mobile-stats {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 3px;
+ }
+
+.attribution { 
+ font-size: 11px; text-align: center;
+ }
+.attribution a {
+ color: rgb(62, 82, 163); 
+ }
+ 
+ 
+ 
+ 

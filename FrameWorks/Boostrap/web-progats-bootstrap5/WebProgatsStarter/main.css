@@ -1,0 +1,18 @@
+:root {
+    --color-brand: #733729;
+    --color-contrast: #D9BBA0;
+}
+
+.text-brand li a, .text-brand {
+    color: var(--color-brand) !important;
+}
+
+body {
+    background-image: url('img/pawns.jpg');
+}
+
+.btn-contactar {
+    background-color: var(--color-contrast);
+    color: var(--color-brand);
+    font-weight: 700;
+}

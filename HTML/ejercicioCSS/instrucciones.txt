@@ -1,0 +1,3 @@
+Utilizando los atributos "style"; 
+da color y formato a cada uno
+de los elementos HTML

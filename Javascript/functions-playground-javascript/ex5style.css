@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.divisores{
+    margin-top: 30px;
+}
+
+.form_fieldset {
+    width: 50%;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+.form_label{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.form_input{
+    width: 100%;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.boton_enviar{
+    width: 100%;
+    background-color: #4c77af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}

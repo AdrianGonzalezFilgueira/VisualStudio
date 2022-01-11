@@ -1,0 +1,11 @@
+/* Todas las imagenes de la clase pequeña va a tener 50px de ancho */
+
+img.peque{
+    width: 500px;
+}
+
+#logo{
+    width: 1000px;
+    border-style: dotted;
+    border-color: orangered;
+}
