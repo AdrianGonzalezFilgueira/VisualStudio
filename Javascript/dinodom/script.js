@@ -111,12 +111,30 @@ function aovar() {
 
     huevo.src = "./img/dinohuevo.png";
     huevo.alt = "huevo dinoseto";
+    huevo.setAttribute("class","huevito");
 
-    huevo.addEventListener("dblclick", (event) => {
-        event.target.src = "./img/eclosion.png";
+
+    // Restaurar cada huevo de forma independiente
+    huevo.addEventListener("click", (event) => {
+        event.target.src = "./img/dinohuevo.png";
     });
 
     dinoContenedor.appendChild(huevo);
+
+
+
+    // Eclosionar todos los huevos generados
+    dinoContenedor.addEventListener("dblclick", (event) => {
+        huevo.setAttribute ("src", "./img/eclosion.png");
+    });
+    dinoContenedor.appendChild(huevo);
+
+    
+
+
+   
 }
+
+
 
 
