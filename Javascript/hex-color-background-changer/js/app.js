@@ -18,9 +18,6 @@ selectorButton.addEventListener('click', (event) => {
     1. << 0 equivale a un Math.floor() [Devuelve el máximo entero menor o igual a un número.]
     2. toString es necesario, nos permite cambiar el valor numérico del Math.random a un valor alfanumérico 
     3. padStart nos asegura que el resultado alfanumérico no sea menor ni superior a 6 caracteres */
-
-
-
 });
 
 
