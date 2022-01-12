@@ -1,9 +1,5 @@
 // Your code here
-function deleteTask(){
 
-
-
-}
     // Declaro el elemento INPUT e inicializo las variables que servirán para generar la ID única de los LI y SPAN
     let textTask = document.querySelector("#addToDo");
     let numeroLi = 0;
@@ -38,6 +34,7 @@ function deleteTask(){
         i.setAttribute("class", "fa fa-trash");
         customSpan.appendChild(i);
 
+        // Evento incluído en el elemento I, para eliminar por completo el LI y sus hijos
         i.addEventListener("click", (event) => {
             ul.removeChild(customLi);
         });
