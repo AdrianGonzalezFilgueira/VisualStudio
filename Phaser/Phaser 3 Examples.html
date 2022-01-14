@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://labs.phaser.io/edit.html?src=src/games/firstgame/part9.js&v=3.55.2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Phaser 3 Examples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="https://labs.phaser.io/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./Phaser 3 Examples_files/editor.main.css"><link rel="stylesheet" href="./Phaser 3 Examples_files/bootstrap.min.css">
+        <script src="./Phaser 3 Examples_files/pouchdb-6.0.7.min.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/jquery-3.1.1.min.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/versions.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/fileSaver.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/loadSource.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/getQueryString.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/TweenMax.min.js.descarga"></script>
+        <script src="./Phaser 3 Examples_files/loader.js.descarga"></script>
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                background-color: #535353;
+                margin: 16px 0 0 0;
+                padding: 0;
+            }
+
+            #editor, #sandboxed {
+                margin-top: 16px;
+                width: 100%;
+                height: 90vh;
+                border: 1px solid black;
+            }
+        </style>
+    <script async="async" type="text/javascript" src="./Phaser 3 Examples_files/editor.main.js.descarga"></script><style type="text/css" media="screen"></style><script async="async" type="text/javascript" src="./Phaser 3 Examples_files/editor.main.nls.js.descarga"></script><style type="text/css" media="screen"></style><style type="text/css" media="screen" class="monaco-tokens-styles">
+.mtk1 { color: #000000; }
+.mtk2 { color: #FFFFFF; }
+.mtk3 { color: #808080; }
+.mtk4 { color: #FF0000; }
+.mtk5 { color: #0451A5; }
+.mtk6 { color: #0000FF; }
+.mtk7 { color: #09885A; }
+.mtk8 { color: #008000; }
+.mtk9 { color: #DD0000; }
+.mtk10 { color: #383838; }
+.mtk11 { color: #CD3131; }
+.mtk12 { color: #863B00; }
+.mtk13 { color: #AF00DB; }
+.mtk14 { color: #800000; }
+.mtk15 { color: #E00000; }
+.mtk16 { color: #3030C0; }
+.mtk17 { color: #666666; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #FF00FF; }
+.mtk20 { color: #A31515; }
+.mtk21 { color: #4F76AC; }
+.mtk22 { color: #008080; }
+.mtk23 { color: #001188; }
+.mtk24 { color: #4864AA; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; }</style><script async="async" type="text/javascript" src="./Phaser 3 Examples_files/mode.js.descarga"></script><script async="async" type="text/javascript" src="./Phaser 3 Examples_files/typescriptServices.js.descarga"></script></head>
+    <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-dark bg-inverse">
+                    <a class="navbar-brand" href="https://labs.phaser.io/index.html">[ Home ]</a>
+                    <a class="navbar-brand" href="https://labs.phaser.io/edit.html?src=src/games/firstgame/part9.js&amp;v=3.55.2#">Phaser 3 Sandbox</a>
+                    <button class="btn btn-primary" type="submit" id="launch">Launch</button>
+                    <button class="btn btn-primary" type="submit" id="run">Run Code</button>
+                    <button class="btn btn-primary" type="submit" id="save">Save</button>
+                    <form class="form-inline float-xs-right">
+                        <input class="form-control" type="text" id="filename">
+                        <button class="btn" type="submit" id="download">Download</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="editor" data-keybinding-context="1" data-mode-id="javascript"><div class="monaco-editor vs focused" style="width: 760px; height: 628px;"><div data-mprt="3" class="overflow-guard" style="width: 760px; height: 628px;"><div class="margin monaco-editor-background" role="presentation" aria-hidden="true" data-transform="translate3d(0px, -1719px, 0px)" style="position: absolute; transform: translate3d(0px, -1719px, 0px); top: 0px; height: 3535px; width: 48px;"><div class="glyph-margin" style="left: 0px; width: 0px; height: 3535px;"></div><div class="margin-view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="margin-view-overlays focused" role="presentation" aria-hidden="true" style="position: absolute; width: 48px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; height: 3535px;"><div linenumber="99" style="position:absolute;top:1862px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">99</div></div><div linenumber="100" style="position:absolute;top:1881px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">100</div></div><div linenumber="101" style="position:absolute;top:1900px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">101</div></div><div linenumber="103" style="position:absolute;top:1938px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">103</div></div><div linenumber="104" style="position:absolute;top:1957px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">104</div></div><div linenumber="105" style="position:absolute;top:1976px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">105</div></div><div linenumber="106" style="position:absolute;top:1995px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">106</div></div><div linenumber="107" style="position:absolute;top:2014px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">107</div></div><div linenumber="108" style="position:absolute;top:2033px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">108</div></div><div linenumber="109" style="position:absolute;top:2052px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">109</div></div><div linenumber="110" style="position:absolute;top:2071px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">110</div></div><div linenumber="111" style="position:absolute;top:2090px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">111</div></div><div linenumber="112" style="position:absolute;top:2109px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">112</div></div><div linenumber="113" style="position:absolute;top:2128px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">113</div></div><div linenumber="114" style="position:absolute;top:2147px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">114</div></div><div linenumber="115" style="position:absolute;top:2166px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">115</div></div><div linenumber="116" style="position:absolute;top:2185px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">116</div></div><div linenumber="117" style="position:absolute;top:2204px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">117</div></div><div linenumber="118" style="position:absolute;top:2223px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">118</div></div><div linenumber="119" style="position:absolute;top:2242px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">119</div></div><div linenumber="120" style="position:absolute;top:2261px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">120</div></div><div linenumber="121" style="position:absolute;top:2280px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">121</div></div><div linenumber="122" style="position:absolute;top:2299px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">122</div></div><div linenumber="123" style="position:absolute;top:2318px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">123</div></div><div linenumber="124" style="position:absolute;top:2337px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">124</div></div><div linenumber="96" style="position:absolute;top:1805px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">96</div></div><div linenumber="97" style="position:absolute;top:1824px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">97</div></div><div linenumber="98" style="position:absolute;top:1843px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">98</div></div><div linenumber="94" style="position:absolute;top:1767px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">94</div></div><div linenumber="95" style="position:absolute;top:1786px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">95</div></div><div linenumber="91" style="position:absolute;top:1710px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">91</div></div><div linenumber="92" style="position:absolute;top:1729px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">92</div></div><div linenumber="93" style="position:absolute;top:1748px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">93</div></div><div linenumber="102" style="position:absolute;top:1919px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:38px;">102</div></div></div></div><div class="monaco-scrollable-element editor-scrollable vs" role="presentation" data-mprt="5" style="position: absolute; overflow: hidden; left: 48px; width: 712px; height: 628px;"><div class="lines-content monaco-editor-background" data-transform="translate3d(0px, -1719px, 0px)" style="position: absolute; overflow: hidden; width: 1e+06px; height: 1e+06px; transform: translate3d(0px, -1719px, 0px); top: 0px; left: 0px;"><div class="view-overlays focused" role="presentation" aria-hidden="true" style="position: absolute; width: 723px; height: 0px;"><div linenumber="99" style="position:absolute;top:1862px;width:100%;height:19px;"></div><div linenumber="100" style="position:absolute;top:1881px;width:100%;height:19px;"><div class="current-line" style="width:723px; height:19px;"></div><div class="cdr bracket-match" style="left:0px;width:8px;height:19px;"></div></div><div linenumber="101" style="position:absolute;top:1900px;width:100%;height:19px;"></div><div linenumber="103" style="position:absolute;top:1938px;width:100%;height:19px;"></div><div linenumber="104" style="position:absolute;top:1957px;width:100%;height:19px;"></div><div linenumber="105" style="position:absolute;top:1976px;width:100%;height:19px;"></div><div linenumber="106" style="position:absolute;top:1995px;width:100%;height:19px;"></div><div linenumber="107" style="position:absolute;top:2014px;width:100%;height:19px;"></div><div linenumber="108" style="position:absolute;top:2033px;width:100%;height:19px;"></div><div linenumber="109" style="position:absolute;top:2052px;width:100%;height:19px;"></div><div linenumber="110" style="position:absolute;top:2071px;width:100%;height:19px;"></div><div linenumber="111" style="position:absolute;top:2090px;width:100%;height:19px;"></div><div linenumber="112" style="position:absolute;top:2109px;width:100%;height:19px;"></div><div linenumber="113" style="position:absolute;top:2128px;width:100%;height:19px;"></div><div linenumber="114" style="position:absolute;top:2147px;width:100%;height:19px;"></div><div linenumber="115" style="position:absolute;top:2166px;width:100%;height:19px;"></div><div linenumber="116" style="position:absolute;top:2185px;width:100%;height:19px;"></div><div linenumber="117" style="position:absolute;top:2204px;width:100%;height:19px;"></div><div linenumber="118" style="position:absolute;top:2223px;width:100%;height:19px;"></div><div linenumber="119" style="position:absolute;top:2242px;width:100%;height:19px;"></div><div linenumber="120" style="position:absolute;top:2261px;width:100%;height:19px;"></div><div linenumber="121" style="position:absolute;top:2280px;width:100%;height:19px;"></div><div linenumber="122" style="position:absolute;top:2299px;width:100%;height:19px;"></div><div linenumber="123" style="position:absolute;top:2318px;width:100%;height:19px;"></div><div linenumber="124" style="position:absolute;top:2337px;width:100%;height:19px;"></div><div linenumber="96" style="position:absolute;top:1805px;width:100%;height:19px;"></div><div linenumber="97" style="position:absolute;top:1824px;width:100%;height:19px;"></div><div linenumber="98" style="position:absolute;top:1843px;width:100%;height:19px;"></div><div linenumber="94" style="position:absolute;top:1767px;width:100%;height:19px;"></div><div linenumber="95" style="position:absolute;top:1786px;width:100%;height:19px;"></div><div linenumber="91" style="position:absolute;top:1710px;width:100%;height:19px;"></div><div linenumber="92" style="position:absolute;top:1729px;width:100%;height:19px;"></div><div linenumber="93" style="position:absolute;top:1748px;width:100%;height:19px;"></div><div linenumber="102" style="position:absolute;top:1919px;width:100%;height:19px;"></div></div><div class="view-rulers"></div><div class="view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="view-lines" role="presentation" aria-hidden="true" data-mprt="7" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; width: 723px; height: 3535px;"><div linenumber="99" style="top:1862px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">this</span><span class="mtk1">.physics.add.overlap(player,&nbsp;stars,&nbsp;collectStar,&nbsp;</span><span class="mtk6">null</span><span class="mtk1">,&nbsp;</span><span class="mtk6">this</span><span class="mtk1">);</span></span></div><div linenumber="100" style="top:1881px;height:19px;" class="view-line"><span><span class="mtk1">}</span></span></div><div linenumber="101" style="top:1900px;height:19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="103" style="top: 1938px; height: 19px;" class="view-line"><span><span class="mtk6">function</span><span class="mtk1">&nbsp;update&nbsp;()</span></span></div><div linenumber="104" style="top: 1957px; height: 19px;" class="view-line"><span><span class="mtk1">{</span></span></div><div linenumber="105" style="top: 1976px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">if</span><span class="mtk1">&nbsp;(cursors.left.isDown)</span></span></div><div linenumber="106" style="top: 1995px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;{</span></span></div><div linenumber="107" style="top: 2014px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.setVelocityX(-</span><span class="mtk7">160</span><span class="mtk1">);</span></span></div><div linenumber="108" style="top: 2033px; height: 19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="109" style="top: 2052px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.anims.play(</span><span class="mtk20">'left'</span><span class="mtk1">,&nbsp;</span><span class="mtk6">true</span><span class="mtk1">);</span></span></div><div linenumber="110" style="top: 2071px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></div><div linenumber="111" style="top: 2090px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">else</span><span class="mtk1">&nbsp;</span><span class="mtk6">if</span><span class="mtk1">&nbsp;(aKey.isDown)</span></span></div><div linenumber="112" style="top: 2109px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;{</span></span></div><div linenumber="113" style="top: 2128px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.setVelocityX(-</span><span class="mtk7">160</span><span class="mtk1">);</span></span></div><div linenumber="114" style="top: 2147px; height: 19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="115" style="top: 2166px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.anims.play(</span><span class="mtk20">'left'</span><span class="mtk1">,&nbsp;</span><span class="mtk6">true</span><span class="mtk1">);</span></span></div><div linenumber="116" style="top: 2185px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></div><div linenumber="117" style="top: 2204px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">else</span><span class="mtk1">&nbsp;</span><span class="mtk6">if</span><span class="mtk1">&nbsp;(cursors.right.isDown)</span></span></div><div linenumber="118" style="top: 2223px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;{</span></span></div><div linenumber="119" style="top: 2242px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.setVelocityX(</span><span class="mtk7">160</span><span class="mtk1">);</span></span></div><div linenumber="120" style="top: 2261px; height: 19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="121" style="top: 2280px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.anims.play(</span><span class="mtk20">'right'</span><span class="mtk1">,&nbsp;</span><span class="mtk6">true</span><span class="mtk1">);</span></span></div><div linenumber="122" style="top: 2299px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></div><div linenumber="123" style="top: 2318px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">else</span><span class="mtk1">&nbsp;</span><span class="mtk6">if</span><span class="mtk1">&nbsp;(dKey.isDown)</span></span></div><div linenumber="124" style="top: 2337px; height: 19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;{</span></span></div><div linenumber="96" style="top:1805px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">this</span><span class="mtk1">.physics.add.collider(player,&nbsp;platforms);</span></span></div><div linenumber="97" style="top:1824px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">this</span><span class="mtk1">.physics.add.collider(stars,&nbsp;platforms);</span></span></div><div linenumber="98" style="top:1843px;height:19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="94" style="top:1767px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;scoreText&nbsp;=&nbsp;</span><span class="mtk6">this</span><span class="mtk1">.add.text(</span><span class="mtk7">16</span><span class="mtk1">,&nbsp;</span><span class="mtk7">16</span><span class="mtk1">,&nbsp;</span><span class="mtk20">'score:&nbsp;0'</span><span class="mtk1">,&nbsp;{&nbsp;fontSize:&nbsp;</span><span class="mtk20">'100px'</span><span class="mtk1">,&nbsp;fill:&nbsp;</span><span class="mtk20">'#885f01'</span><span class="mtk1">&nbsp;});</span></span></div><div linenumber="95" style="top:1786px;height:19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="91" style="top:1710px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;});</span></span></div><div linenumber="92" style="top:1729px;height:19px;" class="view-line"><span><span>&nbsp;</span></span></div><div linenumber="93" style="top:1748px;height:19px;" class="view-line"><span><span class="mtk8">//&nbsp;LOCALIZACIÓN&nbsp;DEL&nbsp;SCORE&nbsp;FONT-SIZE&nbsp;Y&nbsp;SU&nbsp;COLOR</span></span></div><div linenumber="102" style="top:1919px;height:19px;" class="view-line"><span><span class="mtk8">//&nbsp;FUNCIÓN&nbsp;QUE&nbsp;ASIGNA&nbsp;MOVIMIENTO&nbsp;SEGÚN&nbsp;LA&nbsp;TECLA&nbsp;PR</span><span class="mtk8">ESIONADA</span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"></div><div class="cursors-layer cursor-line-style cursor-blink"><div class="cursor" role="presentation" aria-hidden="true" linenumber="100" column="2" style="height: 19px; top: 1881px; left: 8px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; display: block; visibility: inherit; width: 2px;"></div></div></div><div class="invisible scrollbar horizontal fade" style="position: absolute; transform: translate3d(0px, 0px, 0px); width: 698px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 687px; transform: translate3d(0px, 0px, 0px);"></div></div><canvas class="decorationsOverviewRuler" width="14" height="628" style="position: absolute; top: 0px; right: 0px; width: 14px; height: 628px; transform: translate3d(0px, 0px, 0px);" data-transform="translate3d(0px, 0px, 0px)"></canvas><div class="invisible scrollbar vertical fade" style="position: absolute; transform: translate3d(0px, 0px, 0px); width: 14px; height: 628px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; height: 111px; transform: translate3d(0px, 305px, 0px);"></div></div></div><div class="scroll-decoration" style="width: 760px;"></div><div data-mprt="4" class="overlayWidgets" style="width: 760px;"><div class="editor-widget find-widget" aria-hidden="false" widgetid="editor.contrib.findWidget" style="position: absolute; right: 28px;"><div title="Toggle Replace mode" tabindex="-1" class="button toggle left collapse disabled" role="button" aria-label="Toggle Replace mode" aria-expanded="false" aria-disabled="true"></div><div class="find-part"><div class="monaco-findInput disabled" style="width: 221px;"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" wrap="off" aria-label="Find" placeholder="Find" title="Find" style="width: 155px;" disabled=""></div></div><div class="controls"><div title="Match Case (Alt+C)" class="custom-checkbox case-sensitive unchecked" role="checkbox" aria-checked="false" aria-label="Match Case (Alt+C)" aria-disabled="true"></div><div title="Match Whole Word (Alt+W)" class="custom-checkbox whole-word unchecked" role="checkbox" aria-checked="false" aria-label="Match Whole Word (Alt+W)" aria-disabled="true"></div><div title="Use Regular Expression (Alt+R)" class="custom-checkbox regex unchecked" role="checkbox" aria-checked="false" aria-label="Use Regular Expression (Alt+R)" aria-disabled="true"></div></div></div><div class="matchesCount" title="" style="min-width: 69px;">1 of 6</div><div title="Previous match (Shift+F3)" tabindex="-1" class="button previous disabled" role="button" aria-label="Previous match (Shift+F3)" aria-disabled="true"></div><div title="Next match (F3)" tabindex="-1" class="button next disabled" role="button" aria-label="Next match (F3)" aria-disabled="true"></div><div class="monaco-checkbox" title="Find in selection"><input type="checkbox" class="checkbox" id="checkbox-0" disabled=""><label class="label" for="checkbox-0"></label></div><div title="Close (Escape)" tabindex="-1" class="button close-fw disabled" role="button" aria-label="Close (Escape)" aria-disabled="true"></div></div><div class="replace-part"><div class="replace-input" style="width: 221px;"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" wrap="off" aria-label="Replace" placeholder="Replace" title="Replace" disabled=""></div></div></div><div title="Replace (Ctrl+Shift+1)" tabindex="-1" class="button replace disabled" role="button" aria-label="Replace (Ctrl+Shift+1)" aria-disabled="true"></div><div title="Replace All (Ctrl+Alt+Enter)" tabindex="-1" class="button replace-all disabled" role="button" aria-label="Replace All (Ctrl+Alt+Enter)" aria-disabled="true"></div></div></div><div class="monaco-editor-hover hidden" aria-hidden="true" role="presentation" widgetid="editor.contrib.modesGlyphHoverWidget" style="position: absolute;"></div><div class="lightbulb-glyph hidden" title="Show Fixes (Ctrl+.)" widgetid="__lightBulbWidget" style="width: 21px; height: 20px; position: absolute;"></div></div><textarea data-mprt="6" class="inputarea" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Editor content" role="textbox" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="top: 0px; left: 0px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;"></textarea><div class="monaco-editor-background line-numbers textAreaCover" style="position: absolute; width: 1px; height: 1px; top: 0px; left: 0px;"></div></div><div data-mprt="2" class="overflowingContentWidgets"><div class="monaco-editor-hover hidden" tabindex="0" widgetid="editor.contrib.modesContentHoverWidget" style="position: absolute; max-width: 1600px; visibility: hidden; top: 173px; left: 117px;"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-editor-hover-content" style="overflow: hidden; font-size: 14px; line-height: 19px; max-height: 250px;"><div class="hover-row"><div><p>function update(): void</p></div></div></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 140px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 140px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 27px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 27px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div><div class="editor-widget parameter-hints-widget" widgetid="editor.widget.parameterHintsWidget" style="font-size: 14px; max-height: 250px; position: absolute; max-width: 1600px; visibility: hidden;"><div class="wrapper"><div class="buttons"><div class="button previous"></div><div class="button next"></div></div><div class="overloads"></div><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="body" style="overflow: hidden;"><div class="signature"></div><div class="docs"></div></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div><div class="editor-widget suggest-widget" widgetid="editor.widget.suggestWidget" style="position: absolute; max-width: 1600px; visibility: hidden; line-height: 19px; height: 19px; top: 219px; left: 441px;"><div class="message" style="display: none;"></div><div class="tree"><div class="monaco-list" role="tree" tabindex="0"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden; height: 0px; transform: translate3d(0px, 0px, 0px);"></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 0px; height: 0px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 0px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 19px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 19px;"></div></div></div></div></div><div class="details" style="font-size: 14px; display: none;"><div class="header"><span class="title" style="font-family: Consolas, &quot;Courier New&quot;, monospace;"><span class="monaco-highlighted-label"></span></span><span class="go-back" title="Go back" style="height: 19px; width: 19px;"></span></div><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="body" style="overflow: hidden;"><p class="type" style="font-family: Consolas, &quot;Courier New&quot;, monospace;"></p><p class="docs"></p></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div><div class="monaco-editor rename-box" widgetid="__renameInputWidget" style="height: 19px; position: absolute; max-width: 1600px; visibility: hidden;"><input class="rename-input" type="text" aria-label="Rename input. Type new name and press Enter to commit." style="font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px;"></div></div><div class="context-view monaco-menu-container bottom left builder-hidden" aria-hidden="true" style="top: 192px; left: 150px; width: initial;"><div class="monaco-menu"></div></div></div></div>
+            </div>
+            <div class="col-md-6">
+                <iframe id="sandboxed" src="./Phaser 3 Examples_files/frame.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    function loadEditor (source, filename)
+    {
+        require.config({ paths: { 'vs': './js/vs' }});
+
+        require(['vs/editor/editor.main'], function() {
+
+            editor = monaco.editor.create(document.getElementById('editor'), {
+                value: source,
+                language: 'javascript'
+            });
+
+            window.onresize = function () {
+                editor.layout();
+            };
+
+            var windowObjectReference;
+
+            var run = document.getElementById('run');
+            var save = document.getElementById('save');
+            var frame = document.getElementById('sandboxed');
+            var download = document.getElementById('download');
+
+            if (filename)
+            {
+                document.getElementById('filename').value = filename;
+            }
+
+            launch.onclick = function ()
+            {
+                var filename = getQueryString('src');
+
+                var strWindowFeatures = 'menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes';
+
+                windowObjectReference = window.open('view.html?src=' + filename + '&v=' + phaserVersion, 'Phaser3Viewer', strWindowFeatures);
+            };
+
+            run.onclick = function ()
+            {
+                frame.contentWindow.postMessage('reload', '*');
+            };
+
+            download.onclick = function ()
+            {
+                var name = document.getElementById('filename');
+
+                var src = editor.model.getLinesContent().join('\n');
+
+                var blob = new Blob([src], { type: 'text/plain;charset=utf-8' });
+
+                saveAs(blob, name.value);
+            };
+
+            save.onclick = function ()
+            {
+                var example = {
+                    _id: filename,
+                    code: editor.model.getLinesContent(),
+                    version: version++
+                };
+
+                if (entry)
+                {
+                    //  update instead of insert
+                    example._rev = entry._rev;
+                }
+
+                db.put(example, function callback(err, result) {
+
+                    if (!err)
+                    {
+                        console.log(filename, 'saved to db - version', example.version);
+
+                        console.log(result.rev);
+
+                        entry._rev = result.rev;
+                    }
+                    else
+                    {
+                        console.log(filename, 'failed to save:', err);
+                    }
+
+                });
+
+            };
+
+            window.addEventListener('message', function (event) {
+
+                // console.log('editor received message');
+                // console.log(event);
+
+                var mainWindow = event.source;
+
+                if (event.data === 'getCode')
+                {
+                    var src = editor.model.getLinesContent();
+
+                    frame.contentWindow.postMessage(src.join('\n'), '*');
+                }
+
+            });
+
+        });
+    }
+
+    var db;
+    var editor;
+    var entry;
+    var version = 1;
+    var phaserVersion;
+
+    $(document).ready(function ()
+    {
+        phaserVersion = getQueryString('v', versions[1].val);
+
+        console.log('v', phaserVersion);
+
+        db = new PouchDB('phaser3-examples');
+
+        if (getQueryString('src'))
+        {
+            var filename = getQueryString('src');
+
+            db.get(filename, function(err, doc) {
+
+                if (err)
+                {
+                    console.log(filename, 'loaded from filesystem');
+
+                    loadSource(filename, function (source) {
+
+                        loadEditor(source, filename);
+
+                    });
+                }
+                else
+                {
+                    console.log(filename, 'loaded from db - version', doc.version);
+
+                    entry = doc;
+                    version = doc.version;
+
+                    loadEditor(doc.code.join('\n'), filename);
+                }
+
+            });
+        }
+        else
+        {
+            var source = [
+                'var config = { width: 800, height: 600 };',
+                'var game = new Phaser.Game(config);'
+            ].join('\n');
+
+            loadEditor(source, 'example.js');
+        }
+
+    });
+
+    </script>
+
+    
+
+</body></html>
