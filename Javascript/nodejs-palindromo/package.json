@@ -1,0 +1,16 @@
+{
+  "name": "palindromo-nodejs-modulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node aaronsolution.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirwils-palindrome": "^1.1.0"
+  }
+}
