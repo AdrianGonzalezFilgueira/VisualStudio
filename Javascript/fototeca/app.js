@@ -13,11 +13,18 @@ app.use(express.urlencoded({ extended: false }))
 // Ofrece una carpeta en el servidor para poder 'colgar' todos los recursos que deben ser accedidos sin reestrición y de manera directa por parte del cliente
 app.use(express.static('public'));
 
+// el método .set modifica una característica de nuestro servidor. Mi motor por defecto de plantillas va a ser EJS
+app.set('view engine', 'ejs');
+
+
 // Define un endpoint a la URL '/', método GET, y ejecutrá la función de callback del segundo parámetro cada vez que reciba una petición
 
 app.get('/', function (req, res) {
-
-
+    res.render("index", {
+        numFotos: fotos.length,
+        saluda: "HOLA!",
+        fotos: fotos
+    });
 })
 
 app.get('/nueva-foto', (req, res) => {
@@ -39,7 +46,7 @@ app.post('/nueva-foto', (req, res) => {
     fotos.push(foto);
 
     // 3. REspondar el cliente con un mensaje simple diciendo el número de foto que hay subidas hasta el momento
-    res.status(201).send(`Hasta el momento hay subidas ${fotos.length} fotos.`);
+    res.status(201).send(`Foto subido correctamente!!`);
 });
 
 
