@@ -1,6 +1,6 @@
 // Declare the necessary variables for the algorithm.
 // Declaro las variables necesarias para el algoritmo
-let example = "Muy222 bien. to2do3.33.5,5/10";
+let example = "Muy2 bien. to24do.3";
 let num;
 let sum = 0;
 
@@ -55,6 +55,17 @@ function sumOfIntegersInString(s){
       return sum;
 }
     
+*/
+
+
+/* CÓDIGO DE ADRIÁN REY PARA CODEWARS
+ 1. EL MÉTODO SPLIT COGE TODA LA CADENA Y BUSCA EL SEPARADOR QUE LE DAMOS (EXPRESIÓN REGULAR), ASÍ QUE ELIMINA TODO LO QUE NO ES UN NÚMERO.
+ 2. MÉTODO REDUCE: El valor devuelto de la función reductora se asigna al acumulador, cuyo valor se recuerda en cada iteración de la matriz y, en última instancia, se convierte en el valor final, único y resultante.
+
+function sumOfIntegersInString(s) {
+  return s.split(/\D/).reduce((prev, curr) => prev + Number(curr), 0);
+}
+
 */
 
 

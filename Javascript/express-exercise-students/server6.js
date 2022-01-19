@@ -1,15 +1,18 @@
-const express = require('express')
+const express = require("express");
 
-const app = express()
+const app = express();
 
-app.get('/formulario', (req, res) => {
-    res.status(200).send(`
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static("server-6-static-files"));
+
+app.get("/formulario", (req, res) => {
+  res.status(200).send(`
     <html>
     <head>
     <link rel="stylesheet" href="/estilos.css">
     </head>
     <body>
-    <form class="form" method="POST" action="/">
+    <form class="form" method="POST" action="/formulario">
     <label for="name" class="label-name">Name</label>
     <input type="text" id="name" name="name" maxlength="40" class="field field-name" />
   
@@ -23,12 +26,15 @@ app.get('/formulario', (req, res) => {
   </form>
   </body>
     </html>
-  `)
-})
+  `);
+});
+
+app.post("/formulario", (req, res) => {
+  res.status(200).json(req.body);
+});
 
 app.use((req, res) => {
-    res.status(404).send('Recurso no encontrado...')
-  })
+  res.status(404).send("Recurso no encontrado...");
+});
 
-app.listen(3000)
-  
+app.listen(3000);
