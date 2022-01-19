@@ -8,7 +8,9 @@
   "main": "server6.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server1":"nodemon server1.js"
+    "server1":"nodemon server1.js",
+    "server2":"nodemon server2.js",
+    "server3":"nodemon server3.js"
   },
   "repository": {
     "type": "git",
