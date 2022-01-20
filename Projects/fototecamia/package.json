@@ -1,0 +1,19 @@
+{
+  "name": "fototeca",
+  "version": "1.0.0",
+  "description": "subir fotos",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "keywords": [
+    "fototecamia"
+  ],
+  "author": "Adrián González Filgueira",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Upload Image</title>
+</head>
+
+<body>
+    <form action="/subir-imagen" method="post">
+        
+        <div class="grid">
+
+            <label for="titulo">
+                Título
+                <input type="text" id="titulo" name="titulo" placeholder="Titulo" required>
+            </label>
+
+            <label for="url">
+                URL
+                <input type="text" id="url" name="url" placeholder="Url" required>
+            </label>
+
+            <label for="fecha">
+                Fecha
+                <input type="date" id="fecha" name="fecha" placeholder="Fecha" required>
+            </label>
+
+        </div>
+
+        <input type="submit" value="Añadir Foto">
+
+    </form>
+</body>
+
+</html>
